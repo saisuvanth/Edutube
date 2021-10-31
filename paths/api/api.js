@@ -3,7 +3,7 @@ import fs from 'fs';
 import { readFile } from 'fs/promises';
 const Searchdata = JSON.parse(
 	await readFile(
-		new URL('./data.json', import.meta.url)
+		new URL('../../data.json', import.meta.url)
 	)
 );
 
